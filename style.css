@@ -1,0 +1,458 @@
+body {
+    margin:0;
+    background:rgb(235, 230, 230);
+}
+.container {
+    width:100%;
+    height:700px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+button {
+    border:none;
+}
+.card-pages {
+    background:white;
+    height: 350px;
+    width:230px;
+    box-shadow:0 0 80px 10px rgb(136, 136, 136);
+    padding:40px;
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+    justify-content:space-between;
+    border-radius: 12px;
+    margin:15px;
+}
+.card-pages:hover {
+    transform:scale(1.03);
+    transition:.5s;
+}
+.paragraf {
+    height:300px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+p {
+    font-size:20px;
+    font-family: 'Montserrat', sans-serif;
+    text-align:center;
+    margin:7px;
+}
+
+/* -------------- page 1 specifics ----------- */ 
+.card-page-1 {
+    justify-content:space-between;
+}
+.card-page-1 p {
+    font-size:16px;
+}
+.citation-symbol p {
+    font-size:80px;
+    font-family:'secular one';
+    margin-bottom:-50px;
+}
+.citation-symbol img {
+    border-radius:50%;
+    margin-bottom:-50px;
+}
+.paragraf-text {
+    font-style:italic;
+}
+.author {
+    color:rgb(122, 110, 155);
+}
+.pager-dots {
+    display:flex;
+}
+.pager-dots div:hover {
+    transform:scale(1.3);
+    background:black;
+
+}
+.dot1, .dot2, .dot3 {
+    width:10px;
+    height:10px;
+    background:rgb(163, 163, 163);
+    margin:8px;
+    border-radius: 50%;
+    transition:.2s
+}
+.dot1 {
+    background:rgb(0, 0, 0);
+    transform:scale(1.2);
+}
+
+/* -------------- page 2 specifics ----------- */ 
+
+.call-to-action {
+    color:white;
+    background:rgb(175, 108, 91);
+    border-radius:50px;
+}
+.call-to-action:hover {
+    transform:scale(1.05);
+    transition:0.1s ease-in-out;
+    cursor: pointer;
+}
+.call-to-action p {
+    font-size:17px;
+    padding:9px;
+}
+.card-page-2 {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+
+/* -------------- page 3 specifics ----------- */ 
+
+.card-page-3 {
+    display:flex;
+    flex-direction: row;
+}
+.card-page-3 p {
+    font-size:30px;
+}
+.icon p {
+    font-size:40px;
+}
+.center-icon p {
+    font-size:70px;
+}
+.corner-icon-1 {
+    align-self:flex-start;
+}
+.corner-icon-2 {
+    align-self:flex-end;
+    transform:rotate(180deg)
+}
+.card-page-3 section {
+    margin:-28px -15px;
+}
+
+/* -------------- Bopping head animation (probably very bad code since I made it my first week, but it works :P) ----------- */ 
+
+.marton-head-container {
+    width:300px;
+    height:300px;
+    overflow:hidden;
+    border-radius:50%;
+    background: rgb(199, 199, 255);
+    box-shadow: inset 0 0 150px 50px  rgb(37, 37, 46);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    transform:scale(0.7);
+    margin-top:-30px;
+    margin-bottom:-30px;
+}
+.enable-360-rotation:hover {
+    transform:rotate(179deg);
+    transition:6s;
+}
+.enable-360-rotation-2:hover {
+    transform:rotate(179deg);
+    transition:6s;
+}
+.marton-head {
+    animation: marton-head 1.5s linear infinite;
+} 
+.marton-hair {
+    margin:0px;
+    width:150px;
+    height:170px;
+    border-radius: 60px;
+    background-color: rgb(82, 40, 40);
+}
+.marton-hair-parting-right {
+    position: absolute;
+    margin:-8px 00px;
+    width:105px;
+    height:120px;
+    background-color: rgb(82, 40, 40);
+    border-radius: 50px;
+}
+.marton-hair-parting-left {
+    position: relative;
+    float:right;
+    margin:-8px 00px;
+    width:105px;
+    height:120px;
+    background-color: rgb(82, 40, 40);
+    border-radius: 60px;
+}
+.marton-face {
+    position:absolute;
+    margin:30px 15px;
+    width:120px;
+    height:110px;
+    background-color: rgb(223, 223, 194);
+    border-radius:45px;
+    animation: marton-face 1.5s linear infinite;
+}
+.marton-face-traits {
+    animation: marton-face-traits 1.5s linear infinite;
+}
+.marton-beard-shadow {
+    position:absolute;
+    margin:40px 0px;
+    width:150px;
+    height:160px;
+    background-color: rgb(71, 36, 36);
+    border-radius:60px;
+}
+.marton-beard {
+    position:absolute;
+    margin:25px 0px;
+    width:150px;
+    height:160px;
+    background-color: rgb(82, 40, 40);
+    border-radius:60px;
+    animation: marton-beard 1.5s linear infinite;
+}
+.marton-ear-right {
+    position: absolute;
+    margin:50px -20px;
+    width:60px;
+    height:60px;
+    background-color: rgb(223, 223, 194);
+    border-radius: 50%;
+    animation: marton-ear-right 1.5s linear infinite;
+}
+.marton-ear-left {
+    position: absolute;
+    margin:50px 108px;
+    width:60px;
+    height:60px;
+    background-color: rgb(223, 223, 194);
+    border-radius: 50%;
+    animation: marton-ear-left 1.5s linear infinite;
+}
+.marton-ear-shadow-right {
+    position: absolute;
+    margin:60px -10px;
+    width:40px;
+    height:40px;
+    background-color: rgb(192, 192, 170);
+    border-radius: 50%;
+    animation: marton-ear-shadow-right 1.5s linear infinite;
+}
+.marton-ear-shadow-left {
+    position: absolute;
+    margin:60px 118px;
+    width:40px;
+    height:40px;
+    background-color: rgb(192, 192, 170);
+    border-radius: 50%;
+    animation: marton-ear-shadow-left 1.5s linear infinite;
+}
+.marton-earbud-right {
+    position: absolute;
+    margin:80px -2px;
+    width:20px;
+    height:20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    animation: marton-ear-shadow-right 1.5s linear infinite;
+}
+.marton-earbud-right2 {
+    position: absolute;
+    margin:83px 3px;
+    width:10px;
+    height:30px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2px;
+    animation: marton-ear-shadow-right 1.5s linear infinite;
+}
+
+.marton-earbud-left {
+    position: absolute;
+    margin:80px 130px;
+    width:20px;
+    height:20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    animation: marton-ear-shadow-left 1.5s linear infinite;
+}
+.marton-earbud-left2 {
+    position: absolute;
+    margin:83px 135px;
+    width:10px;
+    height: 30px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2px;
+    animation: marton-ear-shadow-left 1.5s linear infinite;
+}
+.marton-moustache-right {
+    position:absolute;
+    margin:95px 10px;
+    width:50px;
+    height:20px;
+    background-color: rgb(71, 36, 36);
+    border-radius:11px;
+    transform: rotate(-20deg);
+}
+.marton-moustache-left {
+    position:absolute;
+    margin:95px 60px;
+    width:50px;
+    height:20px;
+    background-color: rgb(71, 36, 36);
+    border-radius:11px;
+    transform: rotate(20deg);
+}
+.marton-eyebrow-right {
+    position:absolute;
+    margin:30px 10px;
+    width:40px;
+    height:15px;
+    background-color: rgb(71, 36, 36);
+    border-radius:11px;
+    transform: rotate(-5deg);
+}
+.marton-eyebrow-left {
+    position:absolute;
+    margin:25px 70px;
+    width:40px;
+    height:15px;
+    background-color: rgb(71, 36, 36);
+    border-radius:11px;
+    animation: marton-eyebrow-left 20s linear infinite;
+}
+.marton-eye-right {
+    position: absolute;
+    margin:35px 10px;
+    width:40px;
+    height:40px;
+    background-color:rgb(36, 36, 36);
+    border-radius: 50%;
+}
+.marton-eye-left {
+    position: absolute;
+    margin:35px 70px;
+    width:40px;
+    height:40px;
+    background-color:rgb(36, 36, 36);
+    border-radius: 50%;
+}
+.marton-eye-noserim {
+    position: absolute;
+    margin:49px 43px;
+    width:25px;
+    height:25px;
+    border-style:solid;
+    border-color:rgb(36, 36, 36);
+    border-width: 5px;
+    border-radius: 50%;
+}
+.marton-eye-noserim-cover {
+    position: absolute;
+    margin:60px 30px;
+    width:65px;
+    height:40px;
+    background-color: rgb(223, 223, 194);
+}
+.marton-nostril-right {
+    position: absolute;
+    margin:80px 52px;
+    width:5px;
+    height:5px;
+    background-color:rgb(36, 36, 36);
+    border-radius: 50%;
+}
+.marton-nostril-left {
+    position: absolute;
+    margin:80px 63px;
+    width:5px;
+    height:5px;
+    background-color:rgb(36, 36, 36);
+    border-radius: 50%;
+}
+.marton-mouth {
+    position:absolute;
+    margin:100px 44px;
+    width:30px;
+    height:15px;
+    background-color: rgb(187, 187, 158);
+    border-radius:11px;
+}
+
+/* ANIMATION */
+@keyframes marton-body {
+    0.0%  { transform: rotate(-5deg); }
+    50% { transform: rotate(5deg); }
+    100%  { transform: rotate(-5deg); }
+}
+
+/*@keyframes marton-head {
+    0.0%  { transform: rotate(-5deg) translate(-10px, 5px); }
+    25%  { transform: rotate(-0deg) translate(0px, -5px); }
+    50% { transform: rotate(5deg) translate(10px, 5px); }
+    75% { transform: rotate(0deg) translate(0px, -5px); }
+    100%  { transform: rotate(-5deg) translate(-10px, 5px) }
+}*/
+/* not sure if i want animation above */
+@keyframes marton-face-traits {
+    0.0%  { transform: translate(-15px, 1px); }
+     25% { transform: translate(0px, -3px); } 
+    50% { transform: translate(15px, 1px); }
+    75%  { transform: translate(0px, -3px); }
+    100%  { transform: translate(-15px, 1px); }
+}
+@keyframes marton-face {
+    0.0%  { transform: translate(-15px, 0px); }
+     25% { transform: translate(0px, -10px); } 
+    50% { transform: translate(15px, 0px); }
+    75%  { transform: translate(0px, -10px); } 
+    100%  { transform: translate(-15px, 0px); }
+}
+@keyframes marton-ear-right {
+    0.0%  { transform: translate(2px, -2px) scale(.8); }
+    25%  { transform: translate(-2px, 0px) scale(.9); }
+    50% { transform: translate(2px, 2px) scale(1); }
+    75%  { transform: translate(-2px, 0px) scale(.9); }
+    100%  { transform: translate(2px, -2px) scale(.8); }
+}
+@keyframes marton-ear-left {
+    0.0%  { transform: translate(-2px, 2px) scale(1); }
+    25%  { transform: translate(2px, 0px) scale(.9); }
+    50% { transform: translate(-2px, -2px) scale(.8); }
+    75%  { transform: translate(2px, 0px) scale(.9); }
+    100%  { transform: translate(-2px, 2px) scale(1); }
+}
+@keyframes marton-ear-shadow-right {
+    0.0%  { transform: translate(2px, -2px) scale(.8); }
+    25%  { transform: translate(-2px, 0px) scale(.9); }
+    50% { transform: translate(2px, 2px) scale(1); }
+    75%  { transform: translate(-2px, 0px) scale(.9); }
+    100%  { transform: translate(2px, -2px) scale(.8); }
+}
+@keyframes marton-ear-shadow-left {
+    0.0%  { transform: translate(-2px, 2px) scale(1); }
+    25%  { transform: translate(2px, 0px) scale(.9); }
+    50% { transform: translate(-2px, -2px) scale(.8); }
+    75%  { transform: translate(2px, 0px) scale(.9); }
+    100%  { transform: translate(-2px, 2px) scale(1); }
+}
+@keyframes marton-beard {
+    0.0%  { transform: translate(0px, 0px); }
+    25% { transform: translate(0px, -5px); } 
+    50% { transform: translate(0px, 0px); }
+    75%  { transform: translate(0px, -5px); } 
+    100%  { transform: translate(0px, 0px); }
+}
+@keyframes marton-eyebrow-left {
+    0.0%  { transform: translate(0px, 0px) rotate(10deg); }
+    1.0%  { transform: translate(0px, 0px) rotate(10deg); }
+    53%  { transform: translate(0px, 0px) rotate(10deg); }
+    54%  { transform: translate(0px, -12px) rotate(10deg); }
+    74%  { transform: translate(0px, -12px) rotate(10deg); }
+    76% { transform: translate(0px, 0px) rotate(10deg); }
+    100%  { transform: translate(0px, 0px) rotate(10deg); }
+}
